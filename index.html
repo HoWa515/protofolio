@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/myLogo.jpg" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script defer src="js/script.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("5wV_YjwI_Gpw32ytv");
+      })();
+    </script>
+    <title>My Space</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a class="main-nav-link" name="hero" href="#">Tech & Me</a>
+          </li>
+          <li>
+            <a class="main-nav-link" name="gallery" href="#">Pet Photo</a>
+          </li>
+          <li>
+            <a class="main-nav-link" name="travel" href="#">Travel Map</a>
+          </li>
+          <li>
+            <a class="btn main-nav-link" name="contact" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="hero" class="section-hero">
+        <div class="hero-container">
+          <div class="hero-text-box">
+            <h1 class="hero-text-heading">My Sample Project:</h1>
+
+            <div class="tab-component">
+              <div class="tab-container">
+                <button class="tab tab--1 tab--active" data-tab="1">
+                  Full-satack
+                </button>
+                <button class="tab tab--2" data-tab="2">Front-end</button>
+                <button class="tab tab--3" data-tab="3">Back-end</button>
+              </div>
+
+              <div class="content content--1 content--active">
+                <div class="project">
+                  <h5 class="project-header">
+                    01-
+                    <a
+                      href="https://exotic-paradise.vercel.app/"
+                      target="_blank"
+                      >https://exotic-paradise.vercel.app/</a
+                    >
+                  </h5>
+                  <p class="project-content">
+                    A hotel booking management website.<br />
+                    <strong>[Tech Features]:</strong> React.js integreted with
+                    advanced pattern and database functionality, with CRUD and
+                    authentication.
+                  </p>
+                </div>
+
+                <div class="project">
+                  <h5 class="project-header">
+                    01-
+                    <a
+                      href="https://exotic-paradise.vercel.app/"
+                      target="_blank"
+                      >https://exotic-paradise.vercel.app/</a
+                    >
+                  </h5>
+                  <p class="project-content">
+                    A Hotel booking management website.<br />
+                    <strong>[Tech Features]:</strong> React.js integreted with
+                    advanced database functionality, with login functionality.
+                  </p>
+                </div>
+
+                <div class="project">
+                  <h5 class="project-header">
+                    01-
+                    <a
+                      href="https://exotic-paradise.vercel.app/"
+                      target="_blank"
+                      >https://exotic-paradise.vercel.app/</a
+                    >
+                  </h5>
+                  <p class="project-content">
+                    A Hotel booking management website.<br />
+                    <strong>[Tech Features]:</strong> React.js integreted with
+                    advanced database functionality, with login functionality.
+                  </p>
+                </div>
+              </div>
+
+              <div class="content content--2">
+                <h5>Music I'm listening...</h5>
+                <p>
+                  🎵 Playlist:Congo to Cuba--
+                  <a
+                    href="https://www.youtube.com/watch?v=amfAAzhjC0E&t=702s"
+                    target="_blank"
+                    >Playlist on Youtube</a
+                  >
+                </p>
+
+                <p>
+                  🎵 Artist:Medwyn Goodall--
+                  <a
+                    href="https://www.youtube.com/channel/UC0Q328Xzxdwe4cYkwRftWLA"
+                    target="_blank"
+                    >Playlist on Youtube</a
+                  >
+                </p>
+              </div>
+              <div class="content content--3">
+                <h5>Recently also interested in...</h5>
+                <p>
+                  💽Documentary:Welten-Saga--
+                  <a
+                    href="https://www.zdf.de/dokumentation/terra-x/welten-saga-mit-christopher-clark-die-schaetze-afrikas-100.html"
+                    target="_blank"
+                    >Playlist on ZDF</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="hero-img-box">
+            <img class="hero-img" src="img/hero-img.png" alt="me at cliff" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Mr.Fox Gallery -->
+      <section id="gallery" class="section-gallery">
+        <div class="gallery-container">
+          <div class="slider">
+            <div class="slide"><img src="img/MrFox_01.jpg" alt="fox-01" /></div>
+            <div class="slide"><img src="img/MrFox_02.jpg" alt="fox-02" /></div>
+            <div class="slide"><img src="img/MrFox_03.jpg" alt="fox-03" /></div>
+            <div class="slide"><img src="img/MrFox_04.jpg" alt="fox-03" /></div>
+            <div class="slide"><img src="img/MrFox_05.jpg" alt="fox-03" /></div>
+
+            <button class="slider_btn slider_btn--left">
+              <ion-icon class="btn-icon" name="chevron-back-outline"></ion-icon>
+            </button>
+            <button class="slider_btn slider_btn--right">
+              <ion-icon
+                class="btn-icon"
+                name="chevron-forward-outline"
+              ></ion-icon>
+            </button>
+
+            <div class="dots">
+              <!-- <button class="dot" data-slide="0">&nbsp;</button>
+                        <button class="dot" data-slide="1">&nbsp;</button>
+                        <button class="dot" data-slide="2">&nbsp;</button> -->
+            </div>
+          </div>
+          <div class="gallery-text-box">
+            <p>
+              <span> Mr.Fox </span> is my pet 🐾, <br />
+              a 'bichon frise'. <br />He is cute and smart, even smarter than
+              his owner.😀 <br />
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Travel section -->
+      <section id="travel" class="travel-section">
+        <div class="travel-container">
+          <div class="travel-heading">
+            <p>I have a dream to travel around the world.</p>
+            <p>
+              (Click🖱👆 the sidebars to see the corresponding details on the
+              map.)
+            </p>
+          </div>
+          <div class="mapApp-container">
+            <div class="location_visited">
+              <p>🌎 Places I've travelled:</p>
+              <ul class="visited-loc">
+                <!-- added by js-->
+              </ul>
+            </div>
+
+            <div class="map-container" id="map"></div>
+
+            <div class="location_plan">
+              <p>📝 My travel plan-list:</p>
+              <ul class="travel-plan">
+                <!-- added by js-->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact form -->
+      <section id="contact" class="contact-container">
+        <h2>Stay in touch 📳</h2>
+        <ul>
+          <li>Tel: 0172-2584587</li>
+          <li>Email: hong.wang.developer@gmail.com</li>
+        </ul>
+        <!-- <form class="form-container grid grid--2--cols" id="form">
+          <div class="form-box grid grid--2--cols">
+            <div class="form-item">
+              <label for="name">Your name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-item">
+              <label for="email">Email address:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-item">
+              <label for="topic">Topic:</label>
+              <input type="text" id="topic" name="topic" />
+            </div>
+            <div class="form-item">
+              <label for="message" class="message">Message:</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="&nbsp;Write me something..."
+              ></textarea>
+            </div>
+          </div>
+        </form> -->
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container"><p>Powered by &copy;Hong Wang</p></div>
+    </footer>
+  </body>
+</html>
