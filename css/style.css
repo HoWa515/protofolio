@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffd5e3;
+  background-color: #fbe0e9;
   height: 9.6rem;
   padding: 0 4.8rem;
 }
@@ -45,7 +45,7 @@ header .main-nav {
 /* **************hero section************
 ************************************* */
 .section-hero {
-  background-image: linear-gradient(#ffd5e3, #ffffff87),
+  background-image: linear-gradient(#fbe0e9, #ffffff87),
     url(../img/hero-background.png);
   background-size: auto;
   padding: 4.8rem 0 9.6rem 0;
@@ -77,8 +77,8 @@ header .main-nav {
 .tab-component {
   max-width: 50rem;
   min-height: 44rem;
-  background-image: linear-gradient(#ffd5e3, #ee6a98);
-  border: #ee6a98 2px solid;
+  background-color: transparent;
+  border: #fdb2cc 2px solid;
   border-radius: 9px;
   margin: 2.4rem 0;
   padding: 1rem;
@@ -96,23 +96,24 @@ header .main-nav {
   border: none;
   border-radius: 9px;
   transform: translateY(-70%);
+  border: 2px dashed #f085ab;
   cursor: pointer;
 }
 
 .tab--1 {
-  background-color: #d1f3f9;
+  background-color: #d8f6fb;
 }
 .tab--2 {
-  background-color: #fcfdd5;
+  background-color: #fefed6;
 }
 .tab--3 {
-  background-color: #f5ddfb;
+  background-color: #efd3f4;
 }
 
 .tab--active {
   transform: translateY(-100%);
   scale: 1.1;
-  border: 2px solid #ee6a98;
+  border: 2px solid #f085ab;
   box-shadow: 3px 4px 5px hsla(340, 39%, 14%, 0.5);
 }
 
@@ -135,13 +136,13 @@ header .main-nav {
 }
 
 .content--1 {
-  background-image: linear-gradient(#ffffffee, #90e9fb);
+  background-image: linear-gradient(#ffffffee, #9cc5cd);
 }
 .content--2 {
-  background-image: linear-gradient(#ffffffee, #f9fb90);
+  background-image: linear-gradient(#ffffffee, #a5a58d);
 }
 .content--3 {
-  background-image: linear-gradient(#ffffffee, #eec6f7);
+  background-image: linear-gradient(#ffffffee, #a08fa4);
 }
 
 .content--active {
@@ -172,7 +173,7 @@ header .main-nav {
 .slider {
   height: 43rem;
   overflow: hidden;
-  border: 2px solid #ee6a98;
+  border: 2px solid #ed81a7;
   box-shadow: 6px 6px 12px #f1b8cc;
   border-radius: 12px;
   position: relative;
@@ -221,7 +222,7 @@ header .main-nav {
 .btn-icon {
   height: 24px;
   width: 24px;
-  color: #ee6a98;
+  color: #e97ba2;
 }
 
 .dots {
